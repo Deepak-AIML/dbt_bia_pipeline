@@ -1,6 +1,6 @@
 {% macro macro_channel_staging(table_name) %}
 
-{% set table_ref = "`" ~ 'dbt-pipeline-415806' ~ "." ~ 'campaign' ~ table_name%}
+{% set table_ref = "`" ~ 'dbt-pipeline-415806' ~ "." ~ 'campaign' ~ table_name ~ "`" %}
 
 with df as (
 select

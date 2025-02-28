@@ -1,3 +1,8 @@
+-- {% set table_name = '.email_raw' %}
+
+-- {{ macro_channel_staging(table_name) }}
+
+
 with email_df as (
   select
   date(date) as date,
